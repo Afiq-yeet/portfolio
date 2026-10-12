@@ -15,15 +15,15 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
         
-        // 1. Matched parameter names to your Android Volley request
+        // Matched parameter names to Android Volley request
         String u = request.getParameter("username");
         String p = request.getParameter("password");
         String f = request.getParameter("fullname");
 
-        // 2. Updated URL to match your typical setup
+        // 2. Updated URL to match typical setup
         String url = "jdbc:mysql://localhost:3306/udon?allowPublicKeyRetrieval=true&useSSL=false";
         String dbUser = "root"; 
-        String dbPass = "xxxx"; // Use your actual MySQL password here
+        String dbPass = "xxxx"; // MySQL password
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
