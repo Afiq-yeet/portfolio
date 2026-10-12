@@ -14,7 +14,7 @@ public class LoginServlet extends HttpServlet {
         String user = request.getParameter("username");
         String pass = request.getParameter("password");
 
-        // Database details - CHANGE THESE TO YOUR ACTUAL DB CREDENTIALS
+        // Database details 
         String dbUrl = "jdbc:mysql://localhost:3306/Udon?allowPublicKeyRetrieval=true&useSSL=false";
         String dbUser = "myuser"; 
         String dbPass = "xxxx";   
