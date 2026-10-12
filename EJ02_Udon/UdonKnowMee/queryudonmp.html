@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Udon Know Mee </title>
+  <style>
+    table { border-collapse: collapse; }
+    td { padding: 8px; vertical-align: middle; }
+    img { border-radius: 4px; border: 0px solid #ddd}
+
+    form { width: 100%; }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /*Align items to left*/
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px;
+      /*background-color: #facf60; /* Optional: light gray background */
+      font-family: arial, sans-serif;
+      box-sizing: border-box;
+  }
+
+  .header-section {
+    width: 100%;       /* Takes full width to allow centering */
+    text-align: center; /* Centers the text and images inside */
+    margin-bottom: 30px;
+  }
+  
+  .main-logo {
+    width: 150px;      /* Adjust this size to fit your logo design */
+    height: auto;      /* Maintains the aspect ratio */
+    margin: 0 auto 10px auto; 
+    display: block;
+  }
+
+  table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  table img {
+    width: 120px; /* Keep them a consistent size */
+    height: auto;
+  }
+  
+  td { 
+    padding: 15px; /* Increased padding for a more 'airy' look */
+    vertical-align: middle; 
+    text-align: center; /* Centering text looks better on wide tables */
+    border: 1px solid #ddd;
+  }
+
+  
+
+  .submit-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #facf60; /* Matching your theme color */
+    color: #68330d;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;      /* Allows the button to use margins for centering */
+    margin-left: auto;   /* Pushes from the left to the center */
+    margin-right: auto;  /* Pushes from the right to the center */
+    font-size: 1.1em;
+    
+  }
+  </style>
+</head>
+<body>
+
+  <div class = "header-section">
+    <img src = "Images/UdonKnowMeeLogo.png" alt = "Udon Know Mee" class = "main-logo">
+    <h2>Welcome to Udon Know Mee </h2>
+  </div>
+  
+  <form method="get" action="querymp">
+  <h3>Step 1: Choose your brand</h3>
+    
+    <table border='1' cellpadding='5'>
+      
+      <tr>
+        <td><input type="checkbox" name="brand" value="Samyang" /></td>
+        <td><b>Samyang</b></td>
+        <td><img src="Images/samyang.jpg" alt="Samyang Thumbnail" width="120"></td>
+      </tr>
+      
+      <tr>
+        <td><input type="checkbox" name="brand" value="Maggi" /></td>
+        <td><b>Maggi</b></td>
+        <td><img src="Images/maggi.jpg" alt="Maggi Thumbnail" width="120"></td>
+      </tr>
+      
+      <tr>
+        <td><input type="checkbox" name="brand" value="Mamee" /></td>
+        <td><b>Mamee</b></td>
+        <td><img src="Images/mamee.png" alt="Mamee Thumbnail" width="120"></td>
+      </tr>
+      
+      <tr>
+        <td><input type="checkbox" name="brand" value="Indomie" /></td>
+        <td><b>Indomie</b></td>
+        <td><img src="Images/indomie.jpg" alt="Indomie Thumbnail" width="120"></td>
+      </tr>
+      
+      <tr>
+        <td><input type="checkbox" name="brand" value="Shin Ramyun" /></td>
+        <td><b>Shin Ramyun</b></td>
+        <td><img src="Images/shin.jpg" alt="Shin Ramyun Thumbnail" width="120"></td>
+      </tr>
+    </table>  
+
+    <br>
+    <input type="submit" value="Show Specific Prices & Order" class = "submit-button" />
+  </form>
+
+</body>
+</html>
+
