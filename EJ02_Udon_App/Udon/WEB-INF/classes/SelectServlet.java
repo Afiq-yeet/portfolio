@@ -31,7 +31,7 @@ public class SelectServlet extends HttpServlet {
         //Prevents Null from Entering
         if (userChoice == null || userChoice.trim().isEmpty()) {
             out.print("Error: No choice selected"); 
-            return; // CRITICAL: This stops the rest of the code from running
+            return; // CRITICAL: Stops the rest of the code from running
         }
         
         // SQL Insert
